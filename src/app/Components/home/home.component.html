@@ -1,0 +1,14 @@
+
+<html>
+    <body>
+        <img src="https://upload.wikimedia.org/wikipedia/he/7/7a/Max_by_Leumi_Card_2019_logo.svg" alt="MAX_Logo">
+        <h2><strong>מערכת לניהול תגובות</strong></h2>
+        <br>
+        <app-search></app-search>
+        <h2><strong>הוסף תגובה</strong></h2>
+        <button mat-raised-button color="primary" (click)="AddNewCommentDialog()">הוסף</button>
+        <br>
+        <app-table  *ngIf="filtersLoaded | async"></app-table>
+        <br>
+    </body>
+</html>

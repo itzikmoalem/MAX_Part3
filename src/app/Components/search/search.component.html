@@ -1,0 +1,29 @@
+<div class="searchBox">
+    <h2><strong>חפש תגובה לפי</strong></h2>
+
+    <form>
+            <mat-form-field appearance="fill">
+                <mat-label>אימייל</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="email">
+                <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error>
+            </mat-form-field>
+            <mat-radio-button value="1" (click)="ChangeSearchType(1)"  checked="checked">
+                <div class="example-container">
+                </div>
+            </mat-radio-button>
+            &nbsp;
+            <mat-form-field appearance="fill">
+                <mat-label>שם</mat-label>
+                <input matInput placeholder="Yaron" [formControl]="name">
+                <mat-error *ngIf="name.invalid">{{getErrorMessageName()}}</mat-error>
+            </mat-form-field>
+            <mat-radio-button value="2" (click)="ChangeSearchType(2)">
+                <div class="example-container">
+                </div>
+            </mat-radio-button>
+ 
+        <br>
+        <button mat-raised-button color="primary" type="button" (click)="Search()">חפש</button>
+
+    </form>
+</div>

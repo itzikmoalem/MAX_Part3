@@ -1,0 +1,38 @@
+<div class="addhBox">
+
+    <form [formGroup]="addComment" (ngSubmit)="Add()" novalidate>
+
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+                <mat-label>סוג תגובה</mat-label>
+                <input matInput placeholder="1" formControlName="postId">
+            </mat-form-field>
+        </div>
+
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+                <mat-label>שם</mat-label>
+                <input matInput placeholder="Yaron" formControlName="name">
+            </mat-form-field>
+        </div>
+
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+                <mat-label>דואר אלקטרוני</mat-label>
+                <input matInput placeholder="Yaron@mail" formControlName="email">
+            </mat-form-field>
+        </div>
+
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+                <mat-label>תגובה</mat-label>
+                <input matInput placeholder="Yaron love eat" formControlName="body">
+            </mat-form-field>
+        </div>
+        
+        <button mat-raised-button color="primary" type="submit" [disabled]="addComment.invalid">הוסף</button>
+
+    </form>
+</div>
+
+

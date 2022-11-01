@@ -1,0 +1,25 @@
+.searchBox{
+
+  border: 2px solid rgb(35, 76, 201);
+  width: 50%;
+  height: 180px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+label {
+  font-size: larger;
+}
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}

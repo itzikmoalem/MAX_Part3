@@ -1,0 +1,10 @@
+<div class="tableBox">
+    <h2><strong>תוצאות</strong></h2>
+    <ag-grid-angular 
+    id="gridStyle"
+    class="ag-theme-balham"
+    [rowData]="exp.comments" 
+    [columnDefs]="columnDefs"
+    (gridReady)="exp.onGridReady($event)">
+</ag-grid-angular>
+</div>
